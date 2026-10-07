@@ -1,0 +1,33 @@
+/* [project]/src/components/RegistrationForm.module.css [app-client] (css) */
+.RegistrationForm-module__pvEeRW__form {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  display: flex;
+}
+
+.RegistrationForm-module__pvEeRW__form label {
+  flex-direction: column;
+  gap: 4px;
+  font-size: .875rem;
+  display: flex;
+}
+
+.RegistrationForm-module__pvEeRW__form input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.RegistrationForm-module__pvEeRW__form button {
+  color: #fff;
+  cursor: pointer;
+  background: #171717;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+/*# sourceMappingURL=src_components_RegistrationForm_module_css_1igg3k2._.single.css.map*/

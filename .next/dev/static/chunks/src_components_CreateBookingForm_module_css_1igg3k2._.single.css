@@ -1,0 +1,72 @@
+/* [project]/src/components/CreateBookingForm.module.css [app-client] (css) */
+.CreateBookingForm-module__EbU6GG__form {
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  margin: 20px 0;
+  display: flex;
+}
+
+.CreateBookingForm-module__EbU6GG__field, .CreateBookingForm-module__EbU6GG__field label {
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  font-size: .875rem;
+  display: flex;
+}
+
+.CreateBookingForm-module__EbU6GG__input {
+  color: #171717;
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  font: inherit;
+  --lightningcss-light: initial;
+  --lightningcss-dark: ;
+  color-scheme: light;
+  background: #fff;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  padding: 8px 10px;
+}
+
+.CreateBookingForm-module__EbU6GG__input:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #167248;
+}
+
+.CreateBookingForm-module__EbU6GG__inputError {
+  border-color: #b91c1c;
+}
+
+.CreateBookingForm-module__EbU6GG__inputError:focus-visible {
+  outline-color: #b91c1c;
+}
+
+.CreateBookingForm-module__EbU6GG__error {
+  color: #b91c1c;
+  overflow-wrap: anywhere;
+  margin: 0;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.CreateBookingForm-module__EbU6GG__form button {
+  color: #fff;
+  min-height: 40px;
+  font: inherit;
+  cursor: pointer;
+  background: #171717;
+  border: 0;
+  border-radius: 4px;
+  align-self: flex-start;
+  padding: 8px 16px;
+}
+
+.CreateBookingForm-module__EbU6GG__form button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+/*# sourceMappingURL=src_components_CreateBookingForm_module_css_1igg3k2._.single.css.map*/

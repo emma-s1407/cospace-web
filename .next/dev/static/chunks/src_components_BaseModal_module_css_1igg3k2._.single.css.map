@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/BaseModal.module.css"],"sourcesContent":[".modal {\n  position: fixed;\n  inset: 0;\n  width: calc(100% - 32px);\n  max-width: 480px;\n  max-height: calc(100dvh - 32px);\n  margin: auto;\n  padding: 64px 24px 24px;\n  overflow: auto;\n  border: 0;\n  border-radius: 8px;\n  background: #fff;\n  color: #171717;\n  color-scheme: light;\n  font-family: var(--font-geist-sans);\n  overflow-wrap: anywhere;\n  box-shadow: 0 16px 48px rgb(0 0 0 / 20%);\n}\n\n.modal::backdrop {\n  background: rgb(100 100 100 / 60%);\n}\n\n.close {\n  position: absolute;\n  top: 16px;\n  right: 16px;\n  min-height: 32px;\n  padding: 6px 12px;\n  border: 1px solid #d1d5db;\n  border-radius: 4px;\n  background: #fff;\n  color: #171717;\n  font: inherit;\n  cursor: pointer;\n}\n\n.close:hover {\n  background: #f3f4f6;\n}\n\n.close:focus-visible {\n  outline: 2px solid #171717;\n  outline-offset: 3px;\n}\n\n.title {\n  margin-bottom: 16px;\n  font-size: 1.25rem;\n  line-height: 1.4;\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;;AAmBA;;;;AAIA;;;;;;;;;;;;;;AAcA;;;;AAIA;;;;;AAKA"}}]
+}

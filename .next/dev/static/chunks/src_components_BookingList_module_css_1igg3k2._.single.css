@@ -1,0 +1,18 @@
+/* [project]/src/components/BookingList.module.css [app-client] (css) */
+.BookingList-module__whoW0W__list {
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+}
+
+.BookingList-module__whoW0W__search {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: .875rem;
+}
+
+/*# sourceMappingURL=src_components_BookingList_module_css_1igg3k2._.single.css.map*/

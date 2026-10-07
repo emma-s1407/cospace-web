@@ -1,0 +1,56 @@
+/* [project]/src/components/BaseModal.module.css [app-client] (css) */
+.BaseModal-module__8ztqGq__modal {
+  color: #171717;
+  --lightningcss-light: initial;
+  --lightningcss-dark: ;
+  color-scheme: light;
+  width: calc(100% - 32px);
+  max-width: 480px;
+  max-height: calc(100dvh - 32px);
+  font-family: var(--font-geist-sans);
+  overflow-wrap: anywhere;
+  background: #fff;
+  border: 0;
+  border-radius: 8px;
+  margin: auto;
+  padding: 64px 24px 24px;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  box-shadow: 0 16px 48px #0003;
+}
+
+.BaseModal-module__8ztqGq__modal::backdrop {
+  background: #64646499;
+}
+
+.BaseModal-module__8ztqGq__close {
+  color: #171717;
+  min-height: 32px;
+  font: inherit;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 6px 12px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.BaseModal-module__8ztqGq__close:hover {
+  background: #f3f4f6;
+}
+
+.BaseModal-module__8ztqGq__close:focus-visible {
+  outline-offset: 3px;
+  outline: 2px solid #171717;
+}
+
+.BaseModal-module__8ztqGq__title {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=src_components_BaseModal_module_css_1igg3k2._.single.css.map*/

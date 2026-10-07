@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/RegistrationForm.module.css"],"sourcesContent":[".form {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  padding: 16px;\n  border: 1px solid #e5e5e5;\n  border-radius: 12px;\n}\n\n.form label {\n  display: flex;\n  flex-direction: column;\n  gap: 4px;\n  font-size: 0.875rem;\n}\n\n.form input {\n  padding: 6px 10px;\n  border: 1px solid #d1d5db;\n  border-radius: 6px;\n}\n\n.form button {\n  padding: 8px 12px;\n  border: none;\n  border-radius: 6px;\n  background: #171717;\n  color: #fff;\n  cursor: pointer;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;;;AAOA;;;;;;AAMA"}}]
+}

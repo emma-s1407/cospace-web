@@ -1,0 +1,68 @@
+/* [project]/src/components/BookingCard.module.css [app-client] (css) */
+.BookingCard-module__CVpzLq__link {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  display: block;
+}
+
+.BookingCard-module__CVpzLq__link:hover, .BookingCard-module__CVpzLq__link:focus-visible {
+  outline-offset: 3px;
+  outline: 2px solid #171717;
+}
+
+.BookingCard-module__CVpzLq__card {
+  color: #171717;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  padding: 16px 20px;
+}
+
+.BookingCard-module__CVpzLq__active {
+  border-left: 6px solid #16a34a;
+}
+
+.BookingCard-module__CVpzLq__inactive {
+  opacity: .7;
+  border-left: 6px solid #9ca3af;
+}
+
+.BookingCard-module__CVpzLq__header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.BookingCard-module__CVpzLq__desk {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.BookingCard-module__CVpzLq__badge {
+  background: #f3f4f6;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: .75rem;
+}
+
+.BookingCard-module__CVpzLq__active .BookingCard-module__CVpzLq__badge {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.BookingCard-module__CVpzLq__details {
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: .875rem;
+  display: grid;
+}
+
+.BookingCard-module__CVpzLq__details dt {
+  color: #6b7280;
+}
+
+/*# sourceMappingURL=src_components_BookingCard_module_css_1igg3k2._.single.css.map*/
