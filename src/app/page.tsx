@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import BaseModal from "@/components/BaseModal";
 import BookingsTable from "@/components/BookingsTable";
+import CreateBookingForm from "@/components/CreateBookingForm";
 import RegistrationForm from "@/components/RegistrationForm";
 import type { BookingCardProps } from "@/components/BookingCard";
 import { initialBookings, type Booking } from "@/data/bookings";
@@ -43,6 +44,12 @@ export default function Home() {
           <div className={styles.tableScroll}>
             <BookingsTable bookings={bookings} />
           </div>
+        </section>
+        <section aria-labelledby="create-booking-heading">
+          <h2 id="create-booking-heading" className={styles.sectionTitle}>
+            Create booking
+          </h2>
+          <CreateBookingForm />
         </section>
       </main>
       <BaseModal isOpen={isOpen} onClose={() => setIsOpen(false)} title="New booking">
