@@ -1,0 +1,51 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  width: calc(100% - 32px);
+  max-width: 480px;
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 64px 24px 24px;
+  overflow: auto;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+  color: #171717;
+  color-scheme: light;
+  font-family: var(--font-geist-sans);
+  overflow-wrap: anywhere;
+  box-shadow: 0 16px 48px rgb(0 0 0 / 20%);
+}
+
+.modal::backdrop {
+  background: rgb(100 100 100 / 60%);
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  min-height: 32px;
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  color: #171717;
+  font: inherit;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: #f3f4f6;
+}
+
+.close:focus-visible {
+  outline: 2px solid #171717;
+  outline-offset: 3px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
