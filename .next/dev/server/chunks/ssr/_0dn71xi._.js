@@ -168,7 +168,9 @@ function Home() {
                                 lineNumber: 49,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                onAdd: addBooking
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
                                 lineNumber: 52,
                                 columnNumber: 11
@@ -488,7 +490,7 @@ function validateBooking({ desk, floor, date }) {
     }
     return errors;
 }
-function CreateBookingForm() {
+function CreateBookingForm({ onAdd }) {
     const [desk, setDesk] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [floor, setFloor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [date, setDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
@@ -513,6 +515,12 @@ function CreateBookingForm() {
         }
         setIsSubmitting(true);
         await new Promise((resolve)=>window.setTimeout(resolve, 2000));
+        onAdd({
+            desk: desk.trim(),
+            floor: floor.trim(),
+            date,
+            active: true
+        });
         setDesk("");
         setFloor("");
         setDate("");
@@ -557,13 +565,13 @@ function CreateBookingForm() {
                                 "aria-describedby": errors.desk ? `${formId}-desk-error` : undefined
                             }, void 0, false, {
                                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                                lineNumber: 105,
+                                lineNumber: 111,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/CreateBookingForm.tsx",
-                        lineNumber: 103,
+                        lineNumber: 109,
                         columnNumber: 5
                     }, this),
                     errors.desk && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -573,13 +581,13 @@ function CreateBookingForm() {
                         children: errors.desk
                     }, void 0, false, {
                         fileName: "[project]/src/components/CreateBookingForm.tsx",
-                        lineNumber: 116,
+                        lineNumber: 122,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                lineNumber: 102,
+                lineNumber: 108,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -599,13 +607,13 @@ function CreateBookingForm() {
                                 "aria-describedby": errors.floor ? `${formId}-floor-error` : undefined
                             }, void 0, false, {
                                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                                lineNumber: 121,
+                                lineNumber: 127,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/CreateBookingForm.tsx",
-                        lineNumber: 119,
+                        lineNumber: 125,
                         columnNumber: 5
                     }, this),
                     errors.floor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -615,13 +623,13 @@ function CreateBookingForm() {
                         children: errors.floor
                     }, void 0, false, {
                         fileName: "[project]/src/components/CreateBookingForm.tsx",
-                        lineNumber: 132,
+                        lineNumber: 138,
                         columnNumber: 22
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                lineNumber: 118,
+                lineNumber: 124,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -641,13 +649,13 @@ function CreateBookingForm() {
                                 "aria-describedby": errors.date ? `${formId}-date-error` : undefined
                             }, void 0, false, {
                                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                                lineNumber: 137,
+                                lineNumber: 143,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/CreateBookingForm.tsx",
-                        lineNumber: 135,
+                        lineNumber: 141,
                         columnNumber: 5
                     }, this),
                     errors.date && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -657,13 +665,13 @@ function CreateBookingForm() {
                         children: errors.date
                     }, void 0, false, {
                         fileName: "[project]/src/components/CreateBookingForm.tsx",
-                        lineNumber: 148,
+                        lineNumber: 154,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                lineNumber: 134,
+                lineNumber: 140,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -672,7 +680,7 @@ function CreateBookingForm() {
                 children: isSubmitting ? "Submitting..." : "Submit"
             }, void 0, false, {
                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                lineNumber: 150,
+                lineNumber: 156,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -680,13 +688,13 @@ function CreateBookingForm() {
                 children: successMessage
             }, void 0, false, {
                 fileName: "[project]/src/components/CreateBookingForm.tsx",
-                lineNumber: 153,
+                lineNumber: 159,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/CreateBookingForm.tsx",
-        lineNumber: 101,
+        lineNumber: 107,
         columnNumber: 3
     }, this);
 }

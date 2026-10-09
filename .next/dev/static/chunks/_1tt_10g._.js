@@ -309,11 +309,11 @@ var _s = __turbopack_context__.k.signature();
 function Home() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
-    if ($[0] !== "d43afa867ac948bed4bb4159a1b833f38e647bdb68be6e222b76c93f7f473025") {
+    if ($[0] !== "0b8bb481a67ea950e553688f5e2b9e2c752957c2bcf73dea6525700792ef6e09") {
         for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d43afa867ac948bed4bb4159a1b833f38e647bdb68be6e222b76c93f7f473025";
+        $[0] = "0b8bb481a67ea950e553688f5e2b9e2c752957c2bcf73dea6525700792ef6e09";
     }
     const [bookings, setBookings] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$bookings$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["initialBookings"]);
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -479,7 +479,9 @@ function Home() {
                     lineNumber: 79,
                     columnNumber: 60
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    onAdd: addBooking
+                }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
                     lineNumber: 79,
                     columnNumber: 143
@@ -998,32 +1000,33 @@ function validateBooking({ desk, floor, date }) {
     }
     return errors;
 }
-function CreateBookingForm() {
+function CreateBookingForm(t0) {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(57);
-    if ($[0] !== "eb4e80aef389fe5df5fa3032c33d493c664b770c280c5d13dc0a0d813e0c9fee") {
-        for(let $i = 0; $i < 57; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(58);
+    if ($[0] !== "3c96a80b6a5eb3398f1ad9c7b89d89215cf24ecb93e8927586d498cca329d771") {
+        for(let $i = 0; $i < 58; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "eb4e80aef389fe5df5fa3032c33d493c664b770c280c5d13dc0a0d813e0c9fee";
+        $[0] = "3c96a80b6a5eb3398f1ad9c7b89d89215cf24ecb93e8927586d498cca329d771";
     }
+    const { onAdd } = t0;
     const [desk, setDesk] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [floor, setFloor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [date, setDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    let t0;
+    let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = {};
-        $[1] = t0;
+        t1 = {};
+        $[1] = t1;
     } else {
-        t0 = $[1];
+        t1 = $[1];
     }
-    const [errors, setErrors] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t0);
+    const [errors, setErrors] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t1);
     const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [successMessage, setSuccessMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const formId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"])();
-    let t1;
-    if ($[2] !== date || $[3] !== desk || $[4] !== floor || $[5] !== isSubmitting) {
-        t1 = async function handleSubmit(event) {
+    let t2;
+    if ($[2] !== date || $[3] !== desk || $[4] !== floor || $[5] !== isSubmitting || $[6] !== onAdd) {
+        t2 = async function handleSubmit(event) {
             event.preventDefault();
             if (isSubmitting) {
                 return;
@@ -1040,6 +1043,12 @@ function CreateBookingForm() {
             }
             setIsSubmitting(true);
             await new Promise(_temp);
+            onAdd({
+                desk: desk.trim(),
+                floor: floor.trim(),
+                date,
+                active: true
+            });
             setDesk("");
             setFloor("");
             setDate("");
@@ -1050,14 +1059,15 @@ function CreateBookingForm() {
         $[3] = desk;
         $[4] = floor;
         $[5] = isSubmitting;
-        $[6] = t1;
+        $[6] = onAdd;
+        $[7] = t2;
     } else {
-        t1 = $[6];
+        t2 = $[7];
     }
-    const handleSubmit = t1;
-    let t2;
-    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = function handleChange(event_0) {
+    const handleSubmit = t2;
+    let t3;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = function handleChange(event_0) {
             const { name, value } = event_0.currentTarget;
             setSuccessMessage("");
             bb11: switch(name){
@@ -1077,299 +1087,299 @@ function CreateBookingForm() {
                     }
             }
         };
-        $[7] = t2;
+        $[8] = t3;
     } else {
-        t2 = $[7];
+        t3 = $[8];
     }
-    const handleChange = t2;
-    const t3 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input} ${errors.desk ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : ""}`;
-    const t4 = Boolean(errors.desk);
-    const t5 = errors.desk ? `${formId}-desk-error` : undefined;
-    let t6;
-    if ($[8] !== desk || $[9] !== isSubmitting || $[10] !== t3 || $[11] !== t4 || $[12] !== t5) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+    const handleChange = t3;
+    const t4 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input} ${errors.desk ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : ""}`;
+    const t5 = Boolean(errors.desk);
+    const t6 = errors.desk ? `${formId}-desk-error` : undefined;
+    let t7;
+    if ($[9] !== desk || $[10] !== isSubmitting || $[11] !== t4 || $[12] !== t5 || $[13] !== t6) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
             children: [
                 "Desk",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                    className: t3,
+                    className: t4,
                     type: "text",
                     name: "desk",
                     value: desk,
                     onChange: handleChange,
                     disabled: isSubmitting,
-                    "aria-invalid": t4,
-                    "aria-describedby": t5
+                    "aria-invalid": t5,
+                    "aria-describedby": t6
                 }, void 0, false, {
                     fileName: "[project]/src/components/CreateBookingForm.tsx",
-                    lineNumber: 129,
+                    lineNumber: 143,
                     columnNumber: 21
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 129,
+            lineNumber: 143,
             columnNumber: 10
         }, this);
-        $[8] = desk;
-        $[9] = isSubmitting;
-        $[10] = t3;
+        $[9] = desk;
+        $[10] = isSubmitting;
         $[11] = t4;
         $[12] = t5;
         $[13] = t6;
+        $[14] = t7;
     } else {
-        t6 = $[13];
+        t7 = $[14];
     }
-    let t7;
-    if ($[14] !== errors.desk || $[15] !== formId) {
-        t7 = errors.desk && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    let t8;
+    if ($[15] !== errors.desk || $[16] !== formId) {
+        t8 = errors.desk && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             id: `${formId}-desk-error`,
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
             role: "alert",
             children: errors.desk
         }, void 0, false, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 141,
+            lineNumber: 155,
             columnNumber: 25
         }, this);
-        $[14] = errors.desk;
-        $[15] = formId;
-        $[16] = t7;
+        $[15] = errors.desk;
+        $[16] = formId;
+        $[17] = t8;
     } else {
-        t7 = $[16];
+        t8 = $[17];
     }
-    let t8;
-    if ($[17] !== t6 || $[18] !== t7) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t9;
+    if ($[18] !== t7 || $[19] !== t8) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].field,
             children: [
-                t6,
-                t7
+                t7,
+                t8
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 150,
+            lineNumber: 164,
             columnNumber: 10
         }, this);
-        $[17] = t6;
         $[18] = t7;
         $[19] = t8;
+        $[20] = t9;
     } else {
-        t8 = $[19];
+        t9 = $[20];
     }
-    const t9 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input} ${errors.floor ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : ""}`;
-    const t10 = Boolean(errors.floor);
-    const t11 = errors.floor ? `${formId}-floor-error` : undefined;
-    let t12;
-    if ($[20] !== floor || $[21] !== isSubmitting || $[22] !== t10 || $[23] !== t11 || $[24] !== t9) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+    const t10 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input} ${errors.floor ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : ""}`;
+    const t11 = Boolean(errors.floor);
+    const t12 = errors.floor ? `${formId}-floor-error` : undefined;
+    let t13;
+    if ($[21] !== floor || $[22] !== isSubmitting || $[23] !== t10 || $[24] !== t11 || $[25] !== t12) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
             children: [
                 "Floor",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                    className: t9,
+                    className: t10,
                     type: "text",
                     name: "floor",
                     value: floor,
                     onChange: handleChange,
                     disabled: isSubmitting,
-                    "aria-invalid": t10,
-                    "aria-describedby": t11
+                    "aria-invalid": t11,
+                    "aria-describedby": t12
                 }, void 0, false, {
                     fileName: "[project]/src/components/CreateBookingForm.tsx",
-                    lineNumber: 162,
+                    lineNumber: 176,
                     columnNumber: 23
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 162,
+            lineNumber: 176,
             columnNumber: 11
         }, this);
-        $[20] = floor;
-        $[21] = isSubmitting;
-        $[22] = t10;
-        $[23] = t11;
-        $[24] = t9;
+        $[21] = floor;
+        $[22] = isSubmitting;
+        $[23] = t10;
+        $[24] = t11;
         $[25] = t12;
+        $[26] = t13;
     } else {
-        t12 = $[25];
+        t13 = $[26];
     }
-    let t13;
-    if ($[26] !== errors.floor || $[27] !== formId) {
-        t13 = errors.floor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    let t14;
+    if ($[27] !== errors.floor || $[28] !== formId) {
+        t14 = errors.floor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             id: `${formId}-floor-error`,
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
             role: "alert",
             children: errors.floor
         }, void 0, false, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 174,
+            lineNumber: 188,
             columnNumber: 27
         }, this);
-        $[26] = errors.floor;
-        $[27] = formId;
-        $[28] = t13;
+        $[27] = errors.floor;
+        $[28] = formId;
+        $[29] = t14;
     } else {
-        t13 = $[28];
+        t14 = $[29];
     }
-    let t14;
-    if ($[29] !== t12 || $[30] !== t13) {
-        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t15;
+    if ($[30] !== t13 || $[31] !== t14) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].field,
             children: [
-                t12,
-                t13
+                t13,
+                t14
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 183,
+            lineNumber: 197,
             columnNumber: 11
         }, this);
-        $[29] = t12;
         $[30] = t13;
         $[31] = t14;
+        $[32] = t15;
     } else {
-        t14 = $[31];
+        t15 = $[32];
     }
-    const t15 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input} ${errors.date ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : ""}`;
-    const t16 = Boolean(errors.date);
-    const t17 = errors.date ? `${formId}-date-error` : undefined;
-    let t18;
-    if ($[32] !== date || $[33] !== isSubmitting || $[34] !== t15 || $[35] !== t16 || $[36] !== t17) {
-        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+    const t16 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].input} ${errors.date ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].inputError : ""}`;
+    const t17 = Boolean(errors.date);
+    const t18 = errors.date ? `${formId}-date-error` : undefined;
+    let t19;
+    if ($[33] !== date || $[34] !== isSubmitting || $[35] !== t16 || $[36] !== t17 || $[37] !== t18) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
             children: [
                 "Date",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                    className: t15,
+                    className: t16,
                     type: "date",
                     name: "date",
                     value: date,
                     onChange: handleChange,
                     disabled: isSubmitting,
-                    "aria-invalid": t16,
-                    "aria-describedby": t17
+                    "aria-invalid": t17,
+                    "aria-describedby": t18
                 }, void 0, false, {
                     fileName: "[project]/src/components/CreateBookingForm.tsx",
-                    lineNumber: 195,
+                    lineNumber: 209,
                     columnNumber: 22
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 195,
+            lineNumber: 209,
             columnNumber: 11
         }, this);
-        $[32] = date;
-        $[33] = isSubmitting;
-        $[34] = t15;
+        $[33] = date;
+        $[34] = isSubmitting;
         $[35] = t16;
         $[36] = t17;
         $[37] = t18;
+        $[38] = t19;
     } else {
-        t18 = $[37];
+        t19 = $[38];
     }
-    let t19;
-    if ($[38] !== errors.date || $[39] !== formId) {
-        t19 = errors.date && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    let t20;
+    if ($[39] !== errors.date || $[40] !== formId) {
+        t20 = errors.date && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             id: `${formId}-date-error`,
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
             role: "alert",
             children: errors.date
         }, void 0, false, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 207,
+            lineNumber: 221,
             columnNumber: 26
         }, this);
-        $[38] = errors.date;
-        $[39] = formId;
-        $[40] = t19;
+        $[39] = errors.date;
+        $[40] = formId;
+        $[41] = t20;
     } else {
-        t19 = $[40];
+        t20 = $[41];
     }
-    let t20;
-    if ($[41] !== t18 || $[42] !== t19) {
-        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t21;
+    if ($[42] !== t19 || $[43] !== t20) {
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].field,
             children: [
-                t18,
-                t19
+                t19,
+                t20
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 216,
+            lineNumber: 230,
             columnNumber: 11
         }, this);
-        $[41] = t18;
         $[42] = t19;
         $[43] = t20;
+        $[44] = t21;
     } else {
-        t20 = $[43];
+        t21 = $[44];
     }
-    const t21 = isSubmitting ? "Submitting..." : "Submit";
-    let t22;
-    if ($[44] !== isSubmitting || $[45] !== t21) {
-        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+    const t22 = isSubmitting ? "Submitting..." : "Submit";
+    let t23;
+    if ($[45] !== isSubmitting || $[46] !== t22) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             type: "submit",
             disabled: isSubmitting,
-            children: t21
+            children: t22
         }, void 0, false, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 226,
+            lineNumber: 240,
             columnNumber: 11
         }, this);
-        $[44] = isSubmitting;
-        $[45] = t21;
+        $[45] = isSubmitting;
         $[46] = t22;
+        $[47] = t23;
     } else {
-        t22 = $[46];
+        t23 = $[47];
     }
-    let t23;
-    if ($[47] !== successMessage) {
-        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    let t24;
+    if ($[48] !== successMessage) {
+        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             role: "status",
             children: successMessage
         }, void 0, false, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 235,
+            lineNumber: 249,
             columnNumber: 11
         }, this);
-        $[47] = successMessage;
-        $[48] = t23;
+        $[48] = successMessage;
+        $[49] = t24;
     } else {
-        t23 = $[48];
+        t24 = $[49];
     }
-    let t24;
-    if ($[49] !== handleSubmit || $[50] !== isSubmitting || $[51] !== t14 || $[52] !== t20 || $[53] !== t22 || $[54] !== t23 || $[55] !== t8) {
-        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+    let t25;
+    if ($[50] !== handleSubmit || $[51] !== isSubmitting || $[52] !== t15 || $[53] !== t21 || $[54] !== t23 || $[55] !== t24 || $[56] !== t9) {
+        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CreateBookingForm$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].form,
             onSubmit: handleSubmit,
             "aria-busy": isSubmitting,
             noValidate: true,
             children: [
-                t8,
-                t14,
-                t20,
-                t22,
-                t23
+                t9,
+                t15,
+                t21,
+                t23,
+                t24
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/CreateBookingForm.tsx",
-            lineNumber: 243,
+            lineNumber: 257,
             columnNumber: 11
         }, this);
-        $[49] = handleSubmit;
-        $[50] = isSubmitting;
-        $[51] = t14;
-        $[52] = t20;
-        $[53] = t22;
+        $[50] = handleSubmit;
+        $[51] = isSubmitting;
+        $[52] = t15;
+        $[53] = t21;
         $[54] = t23;
-        $[55] = t8;
-        $[56] = t24;
+        $[55] = t24;
+        $[56] = t9;
+        $[57] = t25;
     } else {
-        t24 = $[56];
+        t25 = $[57];
     }
-    return t24;
+    return t25;
 }
-_s(CreateBookingForm, "Rkp9XUlJ7aJvPfnKSk3N+3nxE+Y=", false, function() {
+_s(CreateBookingForm, "kUYNMtPY4Lbxi2V2RF+FzCwePEU=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"]
     ];
