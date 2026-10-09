@@ -471,8 +471,8 @@ function validateBooking({ desk, floor, date }) {
     if (desk.trim().length < 3) {
         errors.desk = "Desk name must be at least 3 characters long.";
     }
-    if (floor.trim().length < 5) {
-        errors.floor = "Floor must be at least 5 characters long.";
+    if (floor.trim().length < 1) {
+        errors.floor = "Floor must be at least 1 character long.";
     }
     const selectedDate = new Date(`${date}T00:00:00`);
     const [year, month, day] = date.split("-").map(Number);

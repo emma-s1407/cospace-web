@@ -1,7 +1,12 @@
 "use client";
 
 import { useId, useState, type ChangeEvent, type FormEvent } from "react";
+import type { BookingCardProps } from "./BookingCard";
 import styles from "./CreateBookingForm.module.css";
+
+type CreateBookingFormProps = {
+	onAdd: (booking: BookingCardProps) => void;
+};
 
 type BookingFormValues = {
 	desk: string;
@@ -46,7 +51,7 @@ export function validateBooking({ desk, floor, date }: BookingFormValues): Valid
 	return errors;
 }
 
-export default function CreateBookingForm() {
+export default function CreateBookingForm({ onAdd }: CreateBookingFormProps) {
 	const [desk, setDesk] = useState("");
 	const [floor, setFloor] = useState("");
 	const [date, setDate] = useState("");
@@ -73,6 +78,7 @@ export default function CreateBookingForm() {
 		setIsSubmitting(true);
 		await new Promise<void>((resolve) => window.setTimeout(resolve, 2000));
 
+		onAdd({ desk: desk.trim(), floor: floor.trim(), date, active: true });
 		setDesk("");
 		setFloor("");
 		setDate("");

@@ -981,8 +981,8 @@ function validateBooking({ desk, floor, date }) {
     if (desk.trim().length < 3) {
         errors.desk = "Desk name must be at least 3 characters long.";
     }
-    if (floor.trim().length < 5) {
-        errors.floor = "Floor must be at least 5 characters long.";
+    if (floor.trim().length < 1) {
+        errors.floor = "Floor must be at least 1 character long.";
     }
     const selectedDate = new Date(`${date}T00:00:00`);
     const [year, month, day] = date.split("-").map(Number);
@@ -1001,11 +1001,11 @@ function validateBooking({ desk, floor, date }) {
 function CreateBookingForm() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(57);
-    if ($[0] !== "c0bef296f46333a9c520ef93c5ebda40e64873255cc9ca77b790cd0086ed5d8e") {
+    if ($[0] !== "eb4e80aef389fe5df5fa3032c33d493c664b770c280c5d13dc0a0d813e0c9fee") {
         for(let $i = 0; $i < 57; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c0bef296f46333a9c520ef93c5ebda40e64873255cc9ca77b790cd0086ed5d8e";
+        $[0] = "eb4e80aef389fe5df5fa3032c33d493c664b770c280c5d13dc0a0d813e0c9fee";
     }
     const [desk, setDesk] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [floor, setFloor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");

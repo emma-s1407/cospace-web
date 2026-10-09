@@ -49,7 +49,7 @@ export default function Home() {
           <h2 id="create-booking-heading" className={styles.sectionTitle}>
             Create booking
           </h2>
-          <CreateBookingForm />
+          <CreateBookingForm onAdd={addBooking} />
         </section>
       </main>
       <BaseModal isOpen={isOpen} onClose={() => setIsOpen(false)} title="New booking">

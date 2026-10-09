@@ -4,7 +4,7 @@ import styles from "./BookingCard.module.css";
 export type BookingCardProps = {
   id?: number;
   desk: string;
-  floor: number;
+  floor: number | string;
   date: string;
   active: boolean;
 };

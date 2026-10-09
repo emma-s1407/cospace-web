@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Booking creation
+
+The dashboard's **Create booking** form adds valid submissions to **My bookings**
+after the two-second submission delay. **New booking** opens a modal that also
+adds bookings to the same list. Floor labels in the Create booking form require
+at least one non-whitespace character, such as `3` or `G`.
+
+Bookings are kept in page state only; refreshing the page resets the list to the
+sample bookings. There is no backend storage yet.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
