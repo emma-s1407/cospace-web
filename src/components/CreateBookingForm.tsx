@@ -18,8 +18,8 @@ export function validateBooking({ desk, floor, date }: BookingFormValues): Valid
 		errors.desk = "Desk name must be at least 3 characters long.";
 	}
 
-	if (floor.trim().length < 5) {
-		errors.floor = "Floor must be at least 5 characters long.";
+	if (floor.trim().length < 1) {
+		errors.floor = "Floor must be at least 1 character long.";
 	}
 
 	const selectedDate = new Date(`${date}T00:00:00`);
